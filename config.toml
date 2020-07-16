@@ -12,7 +12,7 @@ theme = "LoveIt"
   [[menu.main]]
     identifier = "posts"
     # 你可以在名称 (允许 HTML 格式) 之前添加其他信息, 例如图标
-    pre = "📋"
+    pre = ""
     # 你可以在名称 (允许 HTML 格式) 之后添加其他信息, 例如图标
     post = ""
     name = "文章"
@@ -24,9 +24,9 @@ theme = "LoveIt"
     identifier = "tags"
     pre = "🎈"
     post = ""
-    name = "Google"
-    url = "https://www.google.com"
-    title = "访问google"
+    name = "Repo"
+    url = ""
+    title = "访问博客仓库"
     weight = 2
 
 [params]
