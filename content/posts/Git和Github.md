@@ -21,3 +21,33 @@ Github除了允许个人和组织创建和访问保管中的代码以外，它�
 ## 初始化一个本地仓库
 * 在任意一个终端程序(gitbash\powershell等)中，cd到一个你要用git管理的目录，然后键入命令 `git init` ，就会在当前目录下创建一个本地git仓库(.git)，但是要注意的是这个仓库是以“.”开头的默认隐藏文件，需要 `ls -a` 才能查看到。
 ## 进行本地提交
+* `git add` 命令用于将变化的文件，从工作区提交到暂存区。它的作用就是告诉 Git，下一次哪些变化需要保存到仓库区。用户可以使用`git status`命令查看目前的暂存区放置了哪些文件。<br>通常使用 `git add .` 意思是将当前目录下所有变化的文件都放入暂存区。
+    ```git
+        # 将指定文件放入暂存区
+        $ git add <file>
+        # 将指定目录下所有变化的文件，放入暂存区
+        $ git add <directory>
+        # 将当前目录下所有变化的文件，放入暂存区
+        $ git add .
+    ```
+* `git commit` 命令用于将暂存区中的变化提交到仓库区。
+    ```git
+        # -m参数用于指定 commit 信息，是必需的。如果省略-m参数，git commit会自动打开文本编辑器，要求输入。
+        $ git commit -m "message" -m参数用于添加提交说明。
+
+        # -v参数可以显示所有的改动信息，也是在文本编辑器首行输入文字信息。
+        $ git commit -v "verbose" 提交时显示所有改动信息。
+
+        # -a参数用于先将所有工作区的变动文件，提交到暂存区，再运行git commit。用了-a参数，就不用执行 git add . 命令了。
+        $ git commit -am "message" 直接提交所有变化了的文件。
+    ```
+# 将Github与Git相关联
+当你在Github新建了一个仓库的时候
+默认页面中会出现以下两行：
+```git
+$ git remote add origin 你仓库的ssh链接
+$ git push -u origin master
+```
+你要做的是：
+* 切换到你的项目目录，键入 `git remote add origin 你仓库的ssh链接`命令，成功后你的本地git仓库就和你的github的新建仓库相关联了。
+* 把本地仓库的内容提交之后，再键入 `git push -u origin master` 这时你的提交内容就成功上传到你github仓库的主分支了。
