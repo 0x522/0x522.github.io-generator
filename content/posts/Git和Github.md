@@ -1,7 +1,7 @@
 ---
 title: "Git和Github"
 date: 2020-07-18T11:35:50+08:00
-draft: true
+draft: false
 ---
 # 基本概念
 ## 什么是Git
