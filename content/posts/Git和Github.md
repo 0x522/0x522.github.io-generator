@@ -51,3 +51,7 @@ $ git push -u origin master
 你要做的是：
 * 切换到你的项目目录，键入 `git remote add origin 你仓库的ssh链接`命令，成功后你的本地git仓库就和你的github的新建仓库相关联了。
 * 把本地仓库的内容提交之后，再键入 `git push -u origin master` 这时你的提交内容就成功上传到你github仓库的主分支了。
+
+# 学习GitHub的资料
+![GitHub入门与实践.pdf](https://file.ituring.com.cn/ScreenShow/0100b1277525ae327a4c)
+[点我购买](https://www.ituring.com.cn/book/1581)
