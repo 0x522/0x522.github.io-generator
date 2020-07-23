@@ -1,5 +1,5 @@
 ---
-title: "Java的collection体系"
+title: "Java的Collection体系"
 date: 2020-07-23T09:09:33+08:00
 draft: false
 ---
@@ -62,7 +62,7 @@ Set中还引入了Hash桶的概念，这是一个抽象的容器，不同的Hash
 * PriorityQueue 优先级队列，本质上是堆。是Queue的实现类AbstractQueue的子类，实现了Serializable接口。
 ## Vector
 类似与ArrayList的动态数组，线程安全，访问较慢。
-* Stack 栈，继承自Vector，先进后出，被双端队列替代。
+* Stack 栈(LIFO)，继承自Vector，先进后出，被双端队列替代。
 
 
 # 集合的另一个基本接口Map
