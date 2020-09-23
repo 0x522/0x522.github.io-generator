@@ -71,7 +71,7 @@ theme = "LoveIt"
     # 文章内容最长索引长度
     contentLength = 4000
     # 搜索框的占位提示语
-    placeholder = ""
+    placeholder = "请输入查找信息"
     #  最大结果数目
     maxResultLength = 10
     #  结果内容片段长度
@@ -96,11 +96,11 @@ theme = "LoveIt"
       # LOGO 的 URL
       logo = ""
       # 标题名称
-      name = "✨陈云涛的小屋✨"
+      name = "Welcome to the House from Chenyuntao"
       # 你可以在名称 (允许 HTML 格式) 之前添加其他信息, 例如图标
-      pre = ""
+      pre = "✨"
       # 你可以在名称 (允许 HTML 格式) 之后添加其他信息, 例如图标
-      post = ""
+      post = "✨"
       #  是否为标题显示打字机动画
       typeit = false
 
