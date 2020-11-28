@@ -1,5 +1,5 @@
 ---
-title: "html常用标签"
+title: "HTML常用标签"
 date: 2020-09-09T12:22:44+08:00
 draft: false
 ---
@@ -84,6 +84,6 @@ draft: false
   - textarea
   - label
 - 注意事项
-  - 一半不见听 input 的 click 事件
+  - 一般不监听 input 的 click 事件
   - form 里面的 input 要有 name
   - form 里面要放一个 type=submit 才能触发 submit 事件。

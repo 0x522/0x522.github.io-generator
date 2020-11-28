@@ -1,5 +1,5 @@
 ---
-title: '关于href="javascript:void(0);"的讨论'
+title: 'href="javascript:void(0);'
 date: 2020-02-16T20:59:56+08:00
 draft: false
 ---
@@ -13,19 +13,17 @@ javascript:void(0) 中最关键的是 void 关键字， void 是 JavaScript 中�
 `<a></a>`超链接的功能：
 
 - 1.可以被点击，有一个下划线样式
-- 2.点击后跳转到href指定的url
+- 2.点击后跳转到 href 指定的 url
 
-如果要保留1功能，去掉2功能，需要将href="javascript:void(0);"    
+如果要保留 1 功能，去掉 2 功能，需要将 href="javascript:void(0);"
 
-javascript是伪协议，表示这个href的值要使用js代码，而void 是 JavaScript 中非常重要的关键字，该操作符指定要计算一个表达式但是不返回值。
+javascript 是伪协议，表示这个 href 的值要使用 js 代码，而 void 是 JavaScript 中非常重要的关键字，该操作符指定要计算一个表达式但是不返回值。
 
 javascript:void(0);仅仅表示一个死链接。
 
+## href="#"与 href="javascript:void(0);"的区别
 
-
-## href="#"与href="javascript:void(0);"的区别
-
-##### *URL*  超链接的 URL。
+##### _URL_ 超链接的 URL。
 
 可能的值：
 
@@ -40,15 +38,13 @@ javascript:void(0);仅仅表示一个死链接。
 
 **#** 包含了一个位置信息，默认的锚是**#top** 也就是网页的上端。
 
-而javascript:void(0); 仅仅表示一个死链接。
+而 javascript:void(0); 仅仅表示一个死链接。
 
 在页面很长的时候会使用 **#** 来定位页面的具体位置，格式为：**# + id**。
 
 如果你要定义一个死链接请使用 javascript:void(0); 。
 
-
-
-## js关于锚(a)的几种调用方法
+## js 关于锚(a)的几种调用方法
 
 ```javascript
 1、a href="javascript:js_method();"
@@ -71,11 +67,11 @@ javascript:void(0);仅仅表示一个死链接。
 
    这种方法点击执行了js函数后return false，页面不发生跳转，执行后还是在页面的当前位置。
 ```
-**综合上述，在a中调用js函数最适当的方法推荐使用：**
+
+**综合上述，在 a 中调用 js 函数最适当的方法推荐使用：**
 
 ```javascript
 <a href="javascript:void(0);" οnclick="js_method()"></a>
 <a href="javascript:;" οnclick="js_method()"></a>
 <a href="#" οnclick="js_method();return false;"></a>
 ```
-
